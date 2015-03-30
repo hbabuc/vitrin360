@@ -1,0 +1,22 @@
+
+
+.kontrolbtn { 
+    float:left;
+    cursor: pointer;
+}
+
+
+.iosArkaPlan{
+    background: #000;
+    width: 10px;
+    height: 10px;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 9998;
+}
+.iosGalleryDiv{
+    top: 0; 
+    left: 0;
+    z-index: 9999;
+}

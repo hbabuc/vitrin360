@@ -1,0 +1,94 @@
+<html>
+<head>
+<title> Vitrin 360 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="vitrin360/js/vitrin360.js"></script>
+<script src="vitrin360/js/vitrin360-zoom.js"></script>
+<script src="vitrin360/js/vitrin360-fullscreen.js"></script>
+<link rel="stylesheet" type="text/css" href="vitrin360/css/stil.css" />
+<script>
+  $(document).ready(function(){  
+    
+    
+    
+      $("#vitrin").vitrin360({
+        
+            imageId           : "resim",                  // birden fazla vitrin koyacaksanız burası farklı olsun not: sonuna rakam koymayın
+            duration          : 1000/15,                  // milisaniye cinsinden değişim süresi
+            frameCount        : 32,                       // toplam resim sayısı
+            autoPlay          : true,                     // otomatik oynatma
+            easing            : true,                     // tutup bıraktıktan sonra yavas yavas dönmesi
+            width             : 300,                      // resimlerin eni
+            height            : 300,                      // resimlerin boyu
+            imageType         : "jpg",                    // resim dosyalarının uzantısı noktasız yazın -> jpg png gif vb
+            loading           : true,                     // yükleniyor olsunmu
+            loadingTextType   : "frameCount",             // Yükleniyor yazısı parametreler (percentage,frameCount)   
+            mouseWithTurn     : true,                     // fareyle çevirme
+            playPauseButton   : true,                     // oynat durdur butonu olsunmu
+            nextPrevButton    : true,                     // ileri geri butonu olsunmu
+            iconSize          : 32,                       // oynat durdur ileri geri icon boyutu
+            border            : "1px dashed #498F8D",     // div kenarlıgı koymak istemezseniz boş bırakın yoksa cssye yazarmış gibi yazın
+            controlBackground : "#000",                   // div kenarlıgı koymak istemezseniz boş bırakın yoksa cssye yazarmış gibi yazın
+            mouseSensitivity  : 5,                        // farenin kaç pikselde bir değişim yapması (çift sayılar veriniz)
+            fullScreen        : true,
+            mainDirectory     : "vitrin360",              // images js ve cssnin bulundugu klasörün adı
+            imageLocation     : "profil-1",               // resimler hangi klasörde ?   resimler/1.jpg şeklindeyse resimler yazınız
+            zoomLocation      : "profil-1-buyuk",          // Zoom klasörü
+            fullScreenWidth   : 900,                       // Fullscreen için olan resimlerin boyutları
+            fullScreenHeight  : 900                        // Fullscreen için olan resimlerin boyutları
+      });
+      
+      $("#vitrinsd").vitrin360({
+        
+            imageId           : "resimasd",                  // birden fazla vitrin koyacaksanız burası farklı olsun not: sonuna rakam koymayın
+            duration          : 1000/15,                  // milisaniye cinsinden değişim süresi
+            frameCount        : 32,                       // toplam resim sayısı
+            autoPlay          : true,                     // otomatik oynatma
+            easing            : true,                     // tutup bıraktıktan sonra yavas yavas dönmesi
+            width             : 600,                      // resimlerin eni
+            height            : 600,                      // resimlerin boyu
+            imageType         : "jpg",                    // resim dosyalarının uzantısı noktasız yazın -> jpg png gif vb
+            loading           : true,                     // yükleniyor olsunmu
+            loadingTextType   : "frameCount",             // Yükleniyor yazısı parametreler (percentage,frameCount)   
+            mouseWithTurn     : true,                     // fareyle çevirme
+            playPauseButton   : true,                     // oynat durdur butonu olsunmu
+            nextPrevButton    : true,                     // ileri geri butonu olsunmu
+            iconSize          : 32,                       // oynat durdur ileri geri icon boyutu
+            border            : "1px dashed #498F8D",     // div kenarlıgı koymak istemezseniz boş bırakın yoksa cssye yazarmış gibi yazın
+            controlBackground : "#000",                   // div kenarlıgı koymak istemezseniz boş bırakın yoksa cssye yazarmış gibi yazın
+            mouseSensitivity  : 5,                        // farenin kaç pikselde bir değişim yapması (çift sayılar veriniz)
+            fullScreen        : true,
+            mainDirectory     : "vitrin360",              // images js ve cssnin bulundugu klasörün adı
+            imageLocation     : "profil-1",               // resimler hangi klasörde ?   resimler/1.jpg şeklindeyse resimler yazınız
+            zoomLocation      : "profil-1-buyuk",          // Zoom klasörü
+            fullScreenWidth   : 900,                       // Fullscreen için olan resimlerin boyutları
+            fullScreenHeight  : 900                        // Fullscreen için olan resimlerin boyutları         
+      });
+      
+      
+      
+  }); 
+
+   
+</script>
+</head>
+<body>
+<table>
+  <col width="300">
+  <col width="600">
+  <tr height="300">
+    <td>
+       <div id="vitrin"></div>
+    </td> 
+    <td>
+       <div id="vitrinsd"></div>
+    </td> 
+  </tr> 
+  <tr>
+    <td><div id="yazi">&nbsp;</div></td>
+  </tr> 
+</table>
+</body>
+</html>
